@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Responsive Slider" />
+
+  <title>Responsive Slider</title>
+
+  <!-- responsive meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery.flexslider.js"></script>
+  <script src="jquery.dotdotdot.min.js"></script>
+
+  <link rel="stylesheet" href="slider.css" />
+  <script src="slider.js"></script>
+
+  <style>
+  .example {
+    margin: 40px 0;
+  }
+
+  .page-wrap {
+    min-width: 320px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+
+  .top-link {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #ccc;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+
+<div class="page-wrap">
+  <a name="top"></a>
+  <h1>Responsive Slider</h1>
+
+
+
+  <p>
+    See <a href="https://github.com/deseretdigital/creatives/blob/master/ksl-assets/build/static/javascript/slider/README.md">README.md</a> for usage.
+  </p>
+
+
+
+  <ul>
+    <li><a href="#example-custom-controls">Custom controls</a></li>
+    <li><a href="#example-not-enough-slides">Not enough slides</a></li>
+    <li><a href="#example-videos">Videos</a></li>
+    <li><a href="#example-initial-styles">Initial Styles</a></li>
+    <li><a href="#example-captions">Captions</a></li>
+    <li><a href="#example-add-remove-slides">Add and Remove Slides</a></li>
+  </ul>
+
+
+
+  <div class="example">
+    <a name="example-custom-controls"></a>
+    <h3 name="example-custom-controls">Custom controls? No problem.</h3>
+    <div class="slider">
+      <div class="controls">
+        Custom Controls:
+        <a href="#" class="prev">prev</a>
+        |
+        <a href="#" class="next">next</a>
+      </div>
+
+      <ul class="slides">
+        <li><img src="http://placehold.it/200x300/eeeeee&amp;text=1" /></li>
+        <li><img src="http://placehold.it/400x400/eeeeee&amp;text=2" /></li>
+        <li><img src="http://placehold.it/600x300/eeeeee&amp;text=3" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=4" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=5" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=6" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=7" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=8" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=9" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=10" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=11" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=12" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=13" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=14" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=15" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=16" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=17" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=18" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=19" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=20" /></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="example">
+    <a name="example-not-enough-slides"></a>
+    <h3>Not enough slides? No problem.</h3>
+    <div class="slider">
+      <ul class="slides">
+        <li><img src="http://placehold.it/200x300/eeeeee&amp;text=1" /></li>
+        <li><img src="http://placehold.it/400x400/eeeeee&amp;text=2" /></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="example">
+    <a name="example-initial-styles"></a>
+    <h3>Initial Styles? No problem.</h3>
+    <button class="initialize">Initialize</button>
+    <div class="slider slider-uninitialized">
+      <ul class="slides">
+        <li><img src="http://placehold.it/200x300/eeeeee&amp;text=1" /></li>
+        <li><img src="http://placehold.it/400x400/eeeeee&amp;text=2" /></li>
+        <li><img src="http://placehold.it/600x300/eeeeee&amp;text=3" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=4" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=5" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=6" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=7" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=8" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=9" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=10" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=11" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=12" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=13" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=14" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=15" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=16" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=17" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=18" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=19" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=20" /></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="example">
+    <a name="example-videos"></a>
+    <h3>Videos? No problem.</h3>
+    <div class="slider">
+      <ul class="slides">
+        <li><div class="youtube" data-video-id="PpccpglnNf0"></div></li>
+        <li><img src="http://placehold.it/600x300/eeeeee&amp;text=2" /></li>
+        <li><div class="youtube" data-video-id="rOsKLtN4XnE"></div></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=4" /></li>
+        <li><div class="youtube" data-video-id="HW2U8FcXlg0"></div></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=6" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=7" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=8" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=9" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=10" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=11" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=12" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=13" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp; text=14" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=15" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=16" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=17" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=18" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=19" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=20" /></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="example">
+    <a name="example-captions"></a>
+    <h3>Captions? No problem.</h3>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="http://placehold.it/200x300/eeeeee&amp;text=1" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/200x300/eeeeee&amp;text=2" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/600x300/eeeeee&amp;text=3" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/200x300/eeeeee&amp;text=4" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/200x300/eeeeee&amp;text=5" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/600x300/eeeeee&amp;text=6" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/200x300/eeeeee&amp;text=7" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/200x300/eeeeee&amp;text=8" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/600x300/eeeeee&amp;text=9" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/200x300/eeeeee&amp;text=10" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/200x300/eeeeee&amp;text=11" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet.
+          </span>
+        </li>
+        <li>
+          <img src="http://placehold.it/600x300/eeeeee&amp;text=12" />
+          <span class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="example">
+    <a name="example-add-remove-slides"></a>
+    <h3 name="example-add-remove-slides">Adding and Removing Slides</h3>
+    <div class="slider" id="add-remove-slides">
+      <div class="controls">
+        <button class="add-slide">Add Slide</button>
+        <button class="remove-slide">Remove Slide</button>
+      </div>
+
+      <ul class="slides">
+        <li><img src="http://placehold.it/200x300/eeeeee&amp;text=1" /></li>
+        <li><img src="http://placehold.it/400x400/eeeeee&amp;text=2" /></li>
+        <li><img src="http://placehold.it/600x300/eeeeee&amp;text=3" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=4" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=5" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=6" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=7" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=8" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=9" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=10" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=11" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=12" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=13" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=14" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=15" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=16" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=17" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=18" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=19" /></li>
+        <li><img src="http://placehold.it/400x300/eeeeee&amp;text=20" /></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <a class="top-link" href="#top">TOP</a>
+</div><!-- /.page-wrap -->
+
+<script>
+
+$(function() {
+  // initialize photo sliders
+  $('.slider').not('.slider-uninitialized').each(function (index, slider) {
+    ksl.assets.slider($(slider));
+  });
+
+  $('button.initialize').on('click', function () {
+    $(this).closest('.example').find('.slider-uninitialized').slider();
+  });
+
+  // setup controls
+  $('.controls .prev').on('click', function (e) {
+    e.preventDefault();
+    $(this).closest('.slider').slider().prev();
+  });
+
+  $('.controls .next').on('click', function (e) {
+    e.preventDefault();
+    $(this).closest('.slider').slider().next();
+  });
+
+  // setup add and remove slides
+  $('#add-remove-slides .controls .add-slide').on('click', function (event) {
+    ksl.assets.slider($(this).closest('.slider')).addSlide(3, '<li><p>Hello World</p></li>');
+  });
+
+  $('#add-remove-slides .controls .remove-slide').on('click', function (event) {
+    ksl.assets.slider($(this).closest('.slider')).removeSlide(3);
+  });
+});
+
+</script>
+<div id="mudpuddle" style="height:0; overflow:hidden;"></div>
+</body>
+</html>
