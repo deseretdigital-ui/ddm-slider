@@ -18,7 +18,7 @@ bower install --save git@github.com:deseretdigital-ui/ddm-slider.git#<commit or 
 
 ## Demo
 
-See [demo](http://creatives.deseretdigital.com/ksl-assets/build/static/components/slider/index.html)
+See [demo](http://deseretdigital-ui.github.io/ddm-slider/)
 
 
 ## Setup
