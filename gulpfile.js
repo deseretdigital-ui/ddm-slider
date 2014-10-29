@@ -20,7 +20,7 @@ gulp.task('example', function () {
 
 
 gulp.task('ghpages', ['example'], function () {
-  return gulp.src('./example').pipe(plugins.ghPages());
+  return gulp.src('./example/**/*').pipe(plugins.ghPages());
 });
 
 
