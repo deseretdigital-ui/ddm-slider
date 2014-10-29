@@ -7,6 +7,15 @@ Please note, There is not currently a way to handle sliders with no slides. Plea
 to handle this issue yourselves.
 
 
+## Bower
+
+We aren't ready to register this in the bower registry but you can still install with bower like so:
+
+```shell
+bower install --save git@github.com:deseretdigital-ui/ddm-slider.git#<commit or branch>
+```
+
+
 ## Demo
 
 See [demo](http://creatives.deseretdigital.com/ksl-assets/build/static/components/slider/index.html)
@@ -17,9 +26,9 @@ See [demo](http://creatives.deseretdigital.com/ksl-assets/build/static/component
 Attach files:
 
 ```html
-<script src="jquery-1.11.0.min.js"></script>
-<link rel="stylesheet" href="slider.css" />
-<script src="slider.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="bower_components/ddm-slider/slider.css" />
+<script src="bower_components/ddm-slider/slider.js"></script>
 ```
 
 Html structure:
