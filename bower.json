@@ -11,8 +11,8 @@
     "bower_components"
   ],
   "dependencies": {
-    "flexslider": "#version/2.2.2",
     "jquery": ">=1.7 <3",
-    "jquery.dotdotdot": "~1.6.16"
+    "jquery.dotdotdot": "~1.6.16",
+    "FlexSlider": "git@github.com:jehoshua02/FlexSlider.git"
   }
 }
