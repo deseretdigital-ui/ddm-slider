@@ -319,3 +319,7 @@
     width: 100%;
     background-color: #000;
 }
+
+.slider-uninitialized > .slides > .caption {
+  display: none;
+}
