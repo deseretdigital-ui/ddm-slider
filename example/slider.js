@@ -128,7 +128,7 @@ ksl.assets.slider = (function ($) {
     this.addSlide = function (index, html, thumbHtml) {
       var thumbHtml = thumbHtml || html;
       $slider.find('.flexslider.main').data('flexslider').addSlide(html, index);
-      $slider.find('.flexslider.thumbs').data('flexslider').addSlide(html, index);
+      $slider.find('.flexslider.thumbs').data('flexslider').addSlide(thumbHtml, index);
     };
 
     this.removeSlide = function (index) {
