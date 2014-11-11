@@ -320,6 +320,6 @@
     background-color: #000;
 }
 
-.slider-uninitialized > .slides > .caption {
+.slider-uninitialized > .slides > li > .caption {
   display: none;
 }
