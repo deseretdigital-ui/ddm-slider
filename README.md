@@ -107,7 +107,7 @@ The slider will replace this element with an `<iframe>` for the video and an `<i
 using the `data-video-id` attribute to build the urls.
 
 
-## Intiial Styles
+## Initial Styles
 
 If your page is crufty and takes a long time to load all the assets and your slider isn't initialized
 immediately, you can add the `slider-uninitialized` modifier class to apply some initial styling to the slider
