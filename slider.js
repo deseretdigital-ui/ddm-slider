@@ -128,15 +128,19 @@ ksl.assets.slider = (function ($) {
     this.addSlide = function (index, html, thumbHtml) {
       var thumbHtml = thumbHtml || html;
       $slider.find('.flexslider.main').data('flexslider').addSlide(html, index);
-      $slider.find('.flexslider.thumbs').data('flexslider').addSlide(html, index);
+      $slider.find('.flexslider.thumbs').data('flexslider').addSlide(thumbHtml, index);
     };
 
     this.removeSlide = function (index) {
+      if (this.getCurrentIndex() === index) {
+        this.prev();
+      }
       $slider.find('.flexslider.main').data('flexslider').removeSlide(index);
       $slider.find('.flexslider.thumbs').data('flexslider').removeSlide(index);
     };
 
     this.getCurrentIndex = function () {
+      var $flexslider = $main;
       return $flexslider.data('flexslider').currentSlide;
     };
 
