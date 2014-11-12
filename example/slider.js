@@ -132,11 +132,15 @@ ksl.assets.slider = (function ($) {
     };
 
     this.removeSlide = function (index) {
+      if (this.getCurrentIndex() === index) {
+        this.prev();
+      }
       $slider.find('.flexslider.main').data('flexslider').removeSlide(index);
       $slider.find('.flexslider.thumbs').data('flexslider').removeSlide(index);
     };
 
     this.getCurrentIndex = function () {
+      var $flexslider = $main;
       return $flexslider.data('flexslider').currentSlide;
     };
 
