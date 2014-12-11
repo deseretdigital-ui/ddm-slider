@@ -10,6 +10,7 @@
     "node_modules",
     "bower_components"
   ],
+  "main": "src/*",
   "dependencies": {
     "jquery": ">=1.7 <3",
     "jquery.dotdotdot": "~1.6.16",
