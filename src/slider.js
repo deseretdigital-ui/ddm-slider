@@ -77,6 +77,8 @@ ksl.assets.slider = (function ($) {
             $captions.dotdotdot({ watch: true });
           }
         }
+        
+        $slider.trigger('startSlide.slider', [slider]);
       },
       before: function (flexslider) {
         $slider.trigger('beforeSlideChange.slider', [slider]);
