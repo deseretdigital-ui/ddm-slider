@@ -1,4 +1,7 @@
 {
+  "name": "ddm-slider",
+  "version": "1.0.1",
+  "main": "src/slider.js",
   "devDependencies": {
     "gulp": "^3.8.9",
     "gulp-gh-pages": "^0.4.0",
